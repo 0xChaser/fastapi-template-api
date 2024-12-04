@@ -1,0 +1,41 @@
+[project]
+name = "project_template"
+description = "project_template for FastAPI"
+authors = [
+    {name="0xChaser"}
+]
+readme = "readme.md"
+requires-python = ">=3.10"
+dependencies = [
+    "alembic>=1.11.1",
+    "asyncpg>=0.30.0",
+    "fastapi[all]>=0.115.5",
+    "fastapi-filter>=2.0.0",
+    "greenlet>=3.1.1",
+    "pydantic>=2.0.3",
+    "sqlalchemy>=2.0.19",
+    "loguru>=0.7.2",
+    "typer>=0.13.1",
+    "uvicorn>=0.32.1"
+    ]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.7.0",
+    "faker>=29.0.0",
+    "pytest>=7.4.0",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# This section need to exists to enable dynamic versioning based on Git commit and distance with tags etc...
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+project_template = "project_template.cli:main"
