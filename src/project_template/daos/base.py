@@ -19,5 +19,5 @@ class BaseDao(ABC):
         pass
 
     @abstractmethod
-    async def delete_all(self): # TODO : Remove It if using the application in production
+    async def delete_all(self): # Remove delete_all method if using the application in production
         pass
