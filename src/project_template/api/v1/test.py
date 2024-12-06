@@ -16,8 +16,8 @@ router = APIRouter(prefix="/test", tags=["Test"])
 
 @router.get("/", response_model=Page[TestOut])
 async def list_test(
-    offset:int,
-    limit:int,
+    offset:int=0,
+    limit:int=10,
     session:AsyncSession = Depends(get_session)
 ):
     """
