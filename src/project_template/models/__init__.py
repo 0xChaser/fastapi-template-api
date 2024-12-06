@@ -1,1 +1,1 @@
-from project_template.models import Test
+from project_template.models.test import Test
