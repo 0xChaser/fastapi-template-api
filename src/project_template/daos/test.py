@@ -22,7 +22,7 @@ class TestDao(BaseDao):
     
     async def get_by_id(self, test_id: UUID) -> Test | None:
         statement = select(Test).where(Test.id == test_id)
-        return await self.session.execute(statement=statement)
+        return await self.session.scalar(statement=statement)
 
     async def get_all(self, offset:int, limit:int) -> list[Test]:
         statement = select(Test).offset(offset).limit(limit)
