@@ -12,7 +12,7 @@
  - Pydantic (Type of data)
  - Base files / Folders
  - One basic endpoint (Test)
- - .env organisation on settings file
+ - Commons HTTP Requests (GET, POST, PATCH, DELETE)
 
 
 ## For running an api using this project : 
@@ -26,7 +26,7 @@ git clone git@github.com:0xChaser/fastapi-template-api.git
 
 2) Configure .env file base on indication in src/project_template/settings.py and the docker-compose.yaml
 
-Here an example : 
+Here's an example : 
 
 ```
 database_uri="postgresql+asyncpg://project_template_admin:test@project_template_db:5432/project_template"
