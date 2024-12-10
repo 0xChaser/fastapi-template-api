@@ -48,7 +48,7 @@ def run(
 ):
     serving_str = f"[dim]Serving at:[/dim] [link]http://{host}:{port}[/link]\n\n[dim]API docs:[/dim] [link]http://{host}:{port}/docs[/link]"
     panel = Panel(
-        f"{serving_str}\n\n[dim]Running in production mode, for development use:[/dim]\n\n[b]mon-immersion dev[/b]",
+        f"{serving_str}\n\n[dim]Running in production mode, for development use:[/dim]\n\n[b]project_template dev[/b]",
         title="Project Template - Production mode",
         expand=False,
         padding=(1, 2),
@@ -89,7 +89,7 @@ def dev(
     serving_str = f"[dim]Serving at:[/dim] [link]http://{host}:{port}[/link]\n\n[dim]API docs:[/dim] [link]http://{host}:{port}/docs[/link]"
 
     panel = Panel(
-        f"{serving_str}\n\n[dim]Running in development mode, for production use:[/dim]\n\n[b]mon-immersion run[/b]",
+        f"{serving_str}\n\n[dim]Running in development mode, for production use:[/dim]\n\n[b]project_template run[/b]",
         title="Project Template - Development mode",
         expand=False,
         padding=(1, 2),
