@@ -2,6 +2,7 @@
 
 ## Contains : 
 
+ - Base on Repository Pattern
  - SRC Layout
  - Basic dependencies
  - DockerCompose (PostgreSQL, PgAdmin, API)

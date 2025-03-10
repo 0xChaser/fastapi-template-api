@@ -4,9 +4,9 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 
 from project_template.settings import settings
 
-mariadb_url = settings.database_uri.unicode_string()
+postgresql_url = settings.database_uri.unicode_string()
 
-engine = create_async_engine(mariadb_url, echo=True, future=True)
+engine = create_async_engine(postgresql_url, echo=True, future=True)
 AsyncSessionFactory = async_sessionmaker(
     autocommit=False,
     autoflush=False,
